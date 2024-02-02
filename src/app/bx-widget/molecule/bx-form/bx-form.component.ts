@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, input } from '@angular/core';
 import { BxInputFieldComponent } from '../../atom/bx-input-field/bx-input-field.component';
 import { FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { BxTextAreaComponent } from '../../atom/bx-text-area/bx-text-area.component';
@@ -27,9 +27,6 @@ import { RoundBadgeComponent } from '../../../src/app/bx-widget/atom/round-badge
   styleUrl: './bx-form.component.scss'
 })
 export class BxFormComponent {
-
-
-
   // FormGroup to manage form controls
   myForm!: FormGroup;
 

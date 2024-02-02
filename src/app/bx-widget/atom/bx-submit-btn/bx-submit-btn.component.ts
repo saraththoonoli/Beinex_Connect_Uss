@@ -10,9 +10,5 @@ import { Component, Input } from '@angular/core';
 })
 export class BxSubmitBtnComponent {
 @Input() btnText! : string;
-// @Input() style: any;
 @Input() dynamicStyle!: { [key: string]: string };
-
-
-
 }

@@ -7,15 +7,16 @@
 
 .bnx-industry {
   background: radial-gradient(circle at 1.8% 4.8%, rgb(17, 23, 58) 0%, rgb(58, 85, 148) 90%);
-  
+
 }
 
 .head {
   text-align: center;
-  h1{
+
+  h1 {
     font-family: $WeightTwo;
     @include defaultH1Styles;
-    
+
   }
 }
 
@@ -44,19 +45,21 @@ h1 {
   color: $ColourOne;
   text-align: start;
 }
+
 .description h3::after {
-    position: absolute;
-    top: 0;
-    right: -43px; 
-    width: 2px;
-    height: 43px; 
-    background-color: #000; 
+  position: absolute;
+  top: 0;
+  right: -43px;
+  width: 2px;
+  height: 43px;
+  background-color: #000;
+  text-align: start;
+}
+
+@include mobile {
+  .bnx-cards {
+    margin: auto;
+    padding-bottom: 0px;
     text-align: start;
   }
-  @include mobile{
-    .bnx-cards {
-        margin: auto;
-        padding-bottom: 0px;
-        text-align: start;
-    }
-  }
+}
